@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -134,7 +136,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
             className="w-40 h-40 flex items-center justify-center shadow-2xl"
           >
             <img 
-              src="/Al-Qassam_Brigades-removebg-preview.png" 
+              src={`${import.meta.env.BASE_URL}Al-Qassam_Brigades-removebg-preview.png`} 
               alt="Al-Qassam Brigades Logo"
               className="w-full h-full object-contain"
             />
